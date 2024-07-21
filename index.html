@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+
+
+    <div class="phone-container">
+        <section class="home-section">
+            <div class="carousel">
+            <img src="assets/images/img5.jpeg" class="active" alt="">
+            <img src="assets/images/img9.jpeg"  alt="">
+            <img src="assets/images/img12.jpeg" alt="">
+            <img src="assets/images/img15.jpeg"  alt="">
+            <img src="assets/images/img7.jpeg"  alt="">
+         </div>
+        <h1 class="heading">Recently Played</h1>
+        <div class="Playlists-group">
+            <div class="Playlist-card">
+                <img src="assets/images/img14.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">Top International</p>
+            </div>
+            <div class="Playlist-card">
+                <img src="assets/images/img8.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">2010 Mix</p>
+            </div>
+            <div class="Playlist-card">
+                <img src="assets/images/img13.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">Hollywood Hit</p>
+            </div>
+            <div class="Playlist-card">
+                <img src="assets/images/img10.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">Top 50</p>
+            </div>
+            <div class="Playlist-card">
+                <img src="assets/images/img16.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">Classical Mix</p>
+            </div>
+        </div>
+        <h1 class="heading">Based On Your Listening</h1>
+        <div class="Playlists-group">
+            <div class="Playlist-card">
+                <img src="assets/images/img9.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">Top International</p>
+            </div>
+            <div class="Playlist-card">
+                <img src="assets/images/img12.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">2010 Mix</p>
+            </div>
+            <div class="Playlist-card">
+                <img src="assets/images/img15.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">Hollywood Hit</p>
+            </div>
+            <div class="Playlist-card">
+                <img src="assets/images/img18.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">Top 50</p>
+            </div>
+            <div class="Playlist-card">
+                <img src="assets/images/img7.jpeg" class="Playlist-card-img" alt="">
+                <p class="Playlist-card-name">Classical Mix</p>
+            </div>
+        </div>
+     </section>
+     <section class="Music-player-sec">
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+        <img src="assets/images/navg.png" class="nav-btn icon hide" alt="">
+        <h1 class="Current-song-name">Art Deco</h1>
+        <p class="artist-name hide">Lana Del Rey</p>
+        <img src="assets/images/img3.jpeg" class="cover hide" alt="">
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00 </p>
+        </div>
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+         </div>
+         </section>
+
+         <section class="playlist hide">
+            <img src="assets/images/back.png" class="back-btn icon" alt="back">
+
+            <h1 class="title">Playlist</h1>
+            <div class="queue active">
+                <div class="queue-cover">
+                    <img src="assets/images/img3.jpeg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">Art Deco</p>
+
+            </div>
+            <div class="queue">
+                <div class="queue-cover">
+                    <img src="assets/images/img4.jpeg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">Espresso</p>
+
+            </div>
+            <div class="queue">
+                <div class="queue-cover">
+                    <img src="assets/images/img6.jpeg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">The Machine</p>
+
+            </div>
+            <div class="queue">
+                <div class="queue-cover">
+                    <img src="assets/images/img1.jpeg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">The Lost Soul Down</p>
+
+            </div>
+            <div class="queue">
+                <div class="queue-cover">
+                    <img src="assets/images/img2.jpeg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">Silk and Cologne</p>
+
+            </div>
+            <div class="queue">
+                <div class="queue-cover">
+                    <img src="assets/images/img19.jpeg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">Head In The Clouds</p>
+
+            </div>
+            <div class="queue">
+                <div class="queue-cover">
+                    <img src="assets/images/img17.jpeg" alt="">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <p class="name">One More Hour</p>
+
+            </div>
+            
+        </section>
+         
+    </div>
+    
+    
+
+
+  <script src="data.js"></script>
+   <script src="app.js"></script>
+       
+         
+
+
+ </body>
+  </html>
